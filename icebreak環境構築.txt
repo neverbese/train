@@ -1,0 +1,203 @@
+http://10.38.2.60/gitlab/
+
+久慈さん　自動化アプリケーション
+
+VSOLuser123
+
+ver1.6.0
+
+社内サーバ 
+
+github
+
+slack
+
+jenkins Concourse
+
+YAML
+
+
+
+# tomcat
+https://tomcat.apache.org/download-90.cgi
+
+インストール手順
+https://www.early2home.com/blog/middleware/tomcat/post-529.html
+
+# git
+https://eng-entrance.com/git-install
+
+
+※このメモはGitLab以外にも以下のフォルダにも格納している
+\\10.38.0.11\edu-nas\Java\IceBreak\ドキュメント
+
+●JDK1.8
+インストールor環境構築手順
+https://techacademy.jp/magazine/8998
+※JDKのインストールから確認
+(インストーラーからインストールする手順。)
+
+インストーラダウンロード
+https://www.java.com/ja/download/
+
+
+●Tomcat9
+インストール手順
+https://www.early2home.com/blog/middleware/tomcat/post-529.html
+
+Tomcat公式サイト
+http://tomcat.apache.org/
+
+●Git
+インストール手順
+https://eng-entrance.com/git-install
+
+●TortoiseGit
+インストール手順
+https://backlog.com/ja/git-tutorial/intro/intro2_1.html
+
+●ローカル環境にGitLabのリポジトリをクローンする方法
+前提条件
+・上記のGitおよびTortoiseGitのインストールが完了していること。
+・gitLabの個人アカウントを持っていること。
+　→アカウントがなければTAに報告して作成してもらう。
+
+・GitLabのURL
+http://10.38.2.60/gitlab
+
+【手順】
+1.自分のローカルPCにフォルダを作成。(※以下ローカルリポジトリ)
+2.上記のGitLabのURLにアクセスして個人用のアカウントでログインする。
+3.「ttc_dev2/ice_break」を選択する。
+4.リモートリポジトリのURLをコピーする。(※画面の中央部分)
+5.ローカルリポジトリ内で右クリックして「Gitクローン(複製)...」をクリック。
+6.GITクローンウィンドウのURL欄にリモートリポジトリのURLを貼り付ける
+　※この時保存先のディレクトリは自動で生成される。
+7.「OK」ボタンを押下。(※クローン作成時間が少しだけかかるため待機する)
+　※押下するとクローンの作成が始まりますが、始まる直前にユーザ名と
+　パスワードを求められるため、GitLabの個人アカウントのユーザ名とパスワードを入力する。
+8.「成功 (XXXXXX ms @ yyyy/mm/dd hh:mm:ss)」と表示されていれば完了。
+
+【参考】
+※初心者向けには良いかも
+https://eng-entrance.com/programming-git#i-12
+
+--------------------------------------------------------------------------------------------------------------------
+●Eclipse4.8 Photon
+ダウンロードサイト
+http://mergedoc.osdn.jp/
+
+・ビット数を確認 (※「スタート」>「コントロールパネル」>「システム」でビット数を確認する)
+・言語はJavaを選択
+・「Standard Edition」の項目からダウンロードする
+
+以下を参考に設定をする。
+https://javazuki.com/articles/windows-pleiades-all-in-one-install.html
+
+●Eclipce上でのGitリポジトリ設置方法
+1.Eclipseを開く
+2.Gitリポジトリーのウィンドウを開く(「パースペクティブを開く」>「Git」を開く)
+3.「既存のローカルGitリポジトリ?を追加」を選択
+4.上記で作成したローカルリポジトリの「Ice_break」フォルダを選択
+5.「追加」ボタンを押下
+
+●Gitリポジトリからプロジェクトをインポートする
+1.「ice_break」>「作業ツリー」>「IceBreak_verX.X.X」を右クリックして「プロジェクトのインポート」を選択。
+2.特に変更がない場合はそのまま「完了」ボタンを押下。
+3.パッケージ・エクスプローラーの中に「IceBreak」プロジェクトが生成されていることを確認
+
+●Eclipce上でのサーバ設置方法(Tomcatの登録)
+1.Eclipseの「ウィンド」>「ビューの表示」>「サーバー」 を押下。
+　※「サーバー」タブが表示される。
+2.サーバータブの中で右クリックして「新規」>「サーバー」を押下。
+3.「サーバのタイプを選択」で、「Apache」の「Tomcat v9.0 サーバー」を選択して「次へ」を押下。
+　※ホスト名、サーバ名、ランタイム環境は変更なし。
+4.「新規サーバー」ウィンドウが表示されるので、使用可能欄から「IceBreak」を選択して「追加」を押下。
+　※「IceBreak」プロジェクトが構成済み欄に移動していること。
+5.「完了」を押下。
+
+●EclipseからTomcatを起動する
+1.パッケージ・エクスプローラーから「IceBreak」>「src」>「resources」>「db_ja_JP.properties」ファイルを開く
+2.2行目(DB_USER=)および4行目(DB_PASS=)をローカルPCで設定したMySQLのユーザ名、パスワードに変更して、保存する。
+3.「サーバー」タブの「ローカルホストのTomcat9(Java10)」の箇所で右クリックして「開始」を押下。
+4.「ローカルホストのTomcat9(Java10)」サーバーが「始動済み、同期済み」と表示され、IceBreak[同期済み]となっていることを確認。
+5.Webブラウザを開き、以下のURLにアクセスする。
+　http://localhost:8080/IceBreak/Login
+6.ローカルPCのMySQLのデータベース名「ttc」、テーブル名「memberinfomaton」テーブルに格納されているデータから
+　社員番号とパスワードを入力して「ログイン」を押下。
+7.ホーム画面に遷移できていれば完了。
+
+--------------------------------------------------------------------------------------------------------------------
+●mysql8.0.13
+
+ダウンロード手順
+https://www.dbonline.jp/mysql/install/index1.html
+
+インストール手順
+https://www.dbonline.jp/mysql/install/index2.html
+※インストール時に以下の製品を選択する
+・Connector/ODBC 8.0
+・Connector/J 8.0
+・MySQL Router 8.0
+・MySQL Server 8.0
+・MySQL Shell 8.0
+・MySQL Workbench 8.0
+・MySQL Documentation 8.0
+
+※PCに古いバージョンや前に使用していた人のMysqlが既に入っている状態で
+　新規インストール使用とすると、インストールに失敗する可能性がある。
+　また単にアンインストールして、再インストールしてもゴミデータのような
+　ものが残ってインストールできなくなってしまうため、アプリケーションの
+　アンインストールだけでなく、サービスの停止、削除およびインストール
+　フォルダ、環境変数の削除も実施すること。
+
+アンインストール手順の参考サイト
+https://money-affairs.com/mysql-uninstall/
+
+--------------------------------------------------------------------------------------------------------------------
+●A5:SQLMk-2　ver2.14.0
+A5:SQLMk-2ベータ版のダウンロードサイト
+https://a5m2.mmatsubara.com/beta/
+
+インストール後の接続手順
+https://a5m2.mmatsubara.com/tips/mysql_connect/
+
+※データベース接続情報を以下に記載
+
+1.本番環境
+ポート番号：3306
+ホスト名：10.38.2.53
+ユーザーID：icebreak
+パスワード：ice_break88
+データベース：TTC
+キャラクタセット：utf8
+「パスワードを保存する」にチェック
+
+2.検証環境
+ポート番号：3306
+ホスト名：10.38.2.68
+ユーザーID：icebreak
+パスワード：ice_break88
+データベース：TTC
+キャラクタセット：utf8
+「パスワードを保存する」にチェック
+
+3.ローカル環境(自分のPCでDBの内容を確認したいときに設定する)
+ポート番号：3306
+ホスト名：localhost
+ユーザーID：root
+パスワード：MySQLインストール時に設定したrootユーザのパスワードを設定
+データベース：mysql
+キャラクタセット：utf8
+「パスワードを保存する」にチェック
+
+ローカル環境用のデータについてはgitLabの以下を参照してください
+フォルダ：「ice_break」>「DB」
+ファイル：table.sql、testdata.sql、attendanceTest.sql
+
+※メモ
+スキーマ作成
+CREATE SCHEMA [スキーマ名]
+
+例)
+CREATE SCHEMA ttc;
