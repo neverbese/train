@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style/common.css">
+        <title>expenseInquery</title>
+    </head>
+    <body>
+        <!-- common header -->
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">UiPath</a>
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="top.html">Home</a>
+                </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- main -->
+        <div class="pageHeader">
+            <h1>経費照会</h1>
+            <hr>
+        </div>
+        <div class="container">
+            <div>
+                <label class="control-label col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6" for="output"><strong>コード:</strong></label>
+                <output name="result" id="number"></output>
+            </div>
+            <div>
+                <label class="control-label col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6" for="output"><strong>タイトル:</strong></label>
+                <output name="result" id="name"></output>
+            </div>
+            <div>
+                <label class="control-label col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6" for="output"><strong>種別:</strong></label>
+                <output name="result" id="type"></output>
+            </div>
+            <div>
+                <label class="control-label col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6" for="output"><strong>金額:</strong></label>
+                <output name="result" id="cost"></output>
+            </div>
+            <div>
+                <label class="control-label col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6"　for="output"><strong>備考:</strong></label>
+                <output name="result" id="remarks"></output>
+            </div>
+            <a class="btn btn-info" href="expenseList.html">戻る</a>
+            <a data-confirm="Are you sure?" class="btn btn-danger" rel="nofollow" data-method="delete" href="top.html">破棄</a>
+        </div>
+        <!-- common footer -->
+        <footer class="fixed-bottom">
+            <hr>
+            <div class="col-lg-12">
+            <nav class="navbar navbar-dark bg-inverse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">(c) 2020 UiPath</li>
+                </ul>
+            </nav>
+            </div>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/style/inquery.js"></script>
+    </body>
+
+</html>

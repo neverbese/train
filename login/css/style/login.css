@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%;
+}
+
+/*.main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+} */
+.h3 {
+  color:white;
+}
+.form-signin {
+  align-items: center;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 19% auto;
+  border-radius: 5px;
+  background: #005BA4;
+  border-top: 3px solid #434a52;
+  border-bottom: 3px solid #434a52;
+}
+
+
+
+

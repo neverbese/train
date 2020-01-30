@@ -1,0 +1,17 @@
+html,
+body {
+  height: 100%;
+}
+
+.pageHeader {
+    margin: 33px;
+}
+
+.card {
+  margin: 10px;
+  height: 40%;
+  border-color: #dee2e6;
+}
+
+
+
