@@ -1,4 +1,3 @@
-
 // 登録コード番号
 var num = 0;
 
@@ -15,12 +14,13 @@ var num = 0;
 }());
 
 function create(){
+    // date登録用配列
+    var data = [];
 
     // 画面入力内容を取得
     var name = $('#ledger_name').val();
     var type = $('#ledger_type').val();
     var cost = $('#ledger_cost').val();
-    console.log();
     var remarks = $('#ledger_remarks').val();
     // 入力チェック
     console.log(name);  
@@ -41,11 +41,9 @@ function create(){
     }
 
     // セッションにデータを詰める
-    localStorage.setItem('num', num);　
-    sessionStorage.setItem('name', name);
-    sessionStorage.setItem('type', type);
-    sessionStorage.setItem('cost', cost);
-    sessionStorage.setItem('remarks', remarks);
+    localStorage.setItem('num', num);
+    data.push(num,name,type,cost,remarks);
+    sessionStorage.setItem('data',data);
 
     window.location.href = "expenseInquery.html"
 }
