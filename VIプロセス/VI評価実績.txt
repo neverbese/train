@@ -1,0 +1,43 @@
+【実績レコード作成にあたっての注意点】
+
+実績レコードを作成する際は、承認された目標画面の最下部にある「実績評価作成」ボタンから作成してください。
+　　　※「VIプロセス評価制度ガイド」p.31参照
+
+ 
+
+目標レコードを複数作成された方は、全ての目標レコードに対して実績を作成し、承認を得てください。
+　　　※評価期間中にシフトをされた方、リーダーに昇格された方などが対象
+
+ 
+
+下期の実績を振り返り、フィードバックをつうじて、チーム内のコミュニケーションの促進につなげてください。
+
+ 
+
+また、2020年度の目標設定もあわせてご対応ください。
+
+ 
+
+ 
+
+【VIプロセス評価制度ガイド】
+
+https://c.ap0.content.force.com/servlet/servlet.FileDownload?file=01510000008H3xT
+
+ 
+
+【VIプロセス評価制度ガイド 説明動画】
+
+https://c.ap0.visual.force.com/apex/video_vi_process2020?sfdc.tabName=01r10000000oRCG
+
+ 
+
+【VIプロセス評価入力方法】
+
+https://c.ap0.visual.force.com/apex/ResourceMonitor_Split?resourceHeight=1040&cnt=19&fileName=mokuhyomanual_20171217&resourceName=peoplevalue
+
+ 
+
+【問合せ先】
+
+seido@vsn.co.jp
